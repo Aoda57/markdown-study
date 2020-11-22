@@ -1,0 +1,6 @@
+
+mysql更新版本，修改密码命令不是set table而是update
+npm修改淘宝镜像源
+npm修改global
+npm设置全局变量（使得全局安装的可以使用命令如vue） path指向global而不是global下的node_moudles
+vue init 和create区别
