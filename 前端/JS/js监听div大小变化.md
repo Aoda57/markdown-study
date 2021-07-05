@@ -50,15 +50,3 @@
     // 注册监听
     resizeObserver.observe(container)
 ```
-## Vue nextTick
-[源码分析](https://libin1991.github.io/2017/10/21/%E9%9D%A2%E8%AF%95%E4%B9%8BVue-nextTick%E5%8E%9F%E7%90%86/)
-> Vue的nextTick主动使用在,假设你更新了data内的数据,数据显示在dom内,你想在数据更新后,对更新过的dom进行其他操作,但是Vue不支持
-> 因为Vue会将所有变化放置队列中,而不是变化立刻更新,所以,你无法针对更新的dom进行操作,所有你需要nextTick,传入你想在dom更新后,对dom的操作
-> Vue会将dom更新完成后,执行你的操作.  
-
-Vue的nextTickVue在内部对异步队列尝试使用原生的 Promise.then、MutationObserver 和 setImmediate，如果执行环境不支持，则会采用 setTimeout(fn, 0) 代替。
-
-[Vue nextTick官网说明](https://cn.vuejs.org/v2/guide/reactivity.html#%E5%BC%82%E6%AD%A5%E6%9B%B4%E6%96%B0%E9%98%9F%E5%88%97)
-
-## 延伸到macroTask和microTask
-[文章](./macrotask和microtask.md)
