@@ -88,7 +88,10 @@ Markdown 表格
 | 单元格  | 单元格 |  
 | 单元格  | 单元格 | 
 
+html 转义字符  
+< 使用 \&lt;
 
+ \> 使用 \&gt;
 
 Markdown 高级技巧
 > 支持的 HTML 元素.不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。目前支持的 HTML 元素有：\<kbd> \<b> \<i> \<em> \<sup> \<sub> \<br>等
